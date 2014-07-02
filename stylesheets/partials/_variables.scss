@@ -1,17 +1,45 @@
-/* # Variables
----------------------------------------------------------------------------------------------------- */
+// Colors
+$blue: #477dca;
+$gray-dark: #333;
+$gray-medium: #999;
+$gray-light: #ddd;
+$red-light: #fbe3e4;
+$yellow-light: #fff6bf;
+$green-light: #e6efc2;
 
+// Background Color
+$color-background: #fff;
+$color-background-dark: $gray-dark;
+$color-background-light: $gray-light;
+$color-background-button-dark: $gray-dark;
+$color-background-button-light: $gray-light;
 
-/* ## Colors
---------------------------------------------- */
-$color-site-bg: #f5f5f5;
-$color-font: #000000;
-$color-link: #e5554e;
-$color-link-visited: $color-link;
-$color-link-hover: #000000;
+// Font Colors
+$color-text: $gray-dark;
+$color-text-dark: $gray-dark;
+$color-text-light: $gray-light;
+$color-text-accent: $blue;
 
-/* ## Fonts
---------------------------------------------- */
-$font-sans: Lato, sans-serif;
-$font-serif: Georgia, Times, "Times New Roman", serif;
-$font-mono: "Courier 10 Pitch", Courier, monospace;
+// Link Colors
+$color-link: $color-text-accent;
+$color-link-hover: darken($color-text-accent, 15);
+$color-button-link-color: $color-link;
+$color-button-link-hover: $color-link-hover;
+
+// Border color
+$color-border-light: $gray-light;
+$color-border-dark: $gray-dark;
+
+// Flash Colors
+$color-alert: $yellow-light;
+$color-error: $red-light;
+$color-notice: lighten($color-text-accent, 40);
+$color-success: $green-light;
+
+// Typography
+$sans-serif: Lato, sans-serif;
+$serif: Georgia, Times, "Times New Roman", serif;
+$mono: "Courier 10 Pitch", Courier, monospace;
+
+$font-family-base: $sans-serif;
+$font-family-header: $serif;

@@ -2,7 +2,7 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-	background-color: #333;
+	background-color: $color-background-dark;
 	clear: both;
 	padding-top: 40px;
 }
@@ -13,16 +13,16 @@
 }
 
 .footer-widgets input {
-	border: 1px solid #333;
+	border: 1px solid $color-border-dark;
 }
 
 .footer-widgets a.button,
 .footer-widgets a:hover {
-	color: #fff;
+	color: $color-link-light;
 }
 
 .footer-widgets li {
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px dotted $color-border-light;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 }

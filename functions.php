@@ -3,13 +3,13 @@
 include_once( get_template_directory() . '/lib/init.php' );
 
 //* Child theme (do not remove)
-define( 'CHILD_THEME_NAME', 'Genesis Sample Theme' );
-define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
+define( 'CHILD_THEME_NAME', 'In the Beginning' );
+define( 'CHILD_THEME_URL', 'http://www.carriedils.com/' );
 define( 'CHILD_THEME_VERSION', '2.1.0' );
 
 //* Enqueue Google Fonts
-add_action( 'wp_enqueue_scripts', 'genesis_sample_google_fonts' );
-function genesis_sample_google_fonts() {
+add_action( 'wp_enqueue_scripts', 'itb_google_fonts' );
+function itb_google_fonts() {
 
 	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Lato:300,400,700', array(), CHILD_THEME_VERSION );
 

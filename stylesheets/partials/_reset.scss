@@ -50,7 +50,5 @@ input[type="search"] {
 .site-header:after,
 .site-inner:after,
 .wrap:after {
-	clear: both;
-	content: " ";
-	display: table;
+	@include clearfix;
 }

@@ -6,16 +6,16 @@
 
 .enews-widget,
 .enews-widget .widget-title {
-	color: #fff;
+	color: $color-text-light;
 }
 
 .sidebar .widget.enews-widget {
-	background-color: #333;
+	background-color: $color-background-dark;
 }
 
 .enews-widget input,
 .enews-widget input:focus {
-	border: 1px solid #333;
+	border: 1px solid $color-border-dark;
 }
 
 .enews-widget input {
@@ -24,15 +24,15 @@
 }
 
 .enews-widget input[type="submit"] {
-	background-color: #e5554e;
-	color: #fff;
+	background-color: $color-text-accent;
+	color: $color-text-light;
 	margin: 0;
 	width: 100%;
 }
 
 .enews-widget input:hover[type="submit"] {
-	background-color: #fff;
-	color: #333;
+	background-color: $color-background-button-light;
+	color: $color-text-dark;
 }
 
 .enews form + p {

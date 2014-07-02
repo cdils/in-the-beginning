@@ -5,9 +5,9 @@
 --------------------------------------------- */
 
 body {
-	background-color: #f5f5f5;
-	color: #333;
-	font-family: $font-sans;
+	background-color: $color-background;
+	color: $color-text;
+	font-family: $font-family-base;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 1.625;
@@ -23,30 +23,25 @@ input[type="submit"],
 textarea:focus,
 .button,
 .gallery img {
-	-webkit-transition: all 0.1s ease-in-out;
-	-moz-transition:    all 0.1s ease-in-out;
-	-ms-transition:     all 0.1s ease-in-out;
-	-o-transition:      all 0.1s ease-in-out;
-	transition:         all 0.1s ease-in-out;
+	@include transition-property (transform);
+	@include transition-duration(0.1s);
+	@include transition-timing-function(ease-in-out);
+	@include transition-delay(0s);
 }
 
-::-moz-selection {
-	background-color: #333;
-	color: #fff;
-}
-
+::-moz-selection,
 ::selection {
-	background-color: #333;
-	color: #fff;
+	background-color: $color-background-dark;
+	color: $color-text-light;
 }
 
 a {
-	color: #e5554e;
+	color: $color-link;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #333;
+	color: $color-link-hover;
 }
 
 p {
@@ -100,8 +95,8 @@ h3,
 h4,
 h5,
 h6 {
-	color: #333;
-	font-family: $font-sans;
+	color: $color-text;
+	font-family: $font-family-header;
 	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 10px;
@@ -198,13 +193,13 @@ img {
 }
 
 .gallery img {
-	border: 1px solid #ddd;
+	border: 1px solid $color-border-light;
 	height: auto;
 	padding: 4px;
 }
 
 .gallery img:hover {
-	border: 1px solid #999;
+	border: 1px solid $color-border-light;
 }
 
 /* ## Forms
@@ -213,9 +208,9 @@ img {
 input,
 select,
 textarea {
-	background-color: #fff;
-	border: 1px solid #ddd;
-	color: #333;
+	background-color: $color-background-light;
+	border: 1px solid $color-border-light;
+	color: $color-text-dark;
 	font-size: 18px;
 	font-weight: 300;
 	padding: 16px;
@@ -224,7 +219,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-	border: 1px solid #999;
+	border: 1px solid $color-border-light;
 	outline: none;
 }
 
@@ -235,13 +230,13 @@ input[type="radio"] {
 }
 
 ::-moz-placeholder {
-	color: #333;
+	color: $color-text-dark;
 	font-weight: 300;
 	opacity: 1;
 }
 
 ::-webkit-input-placeholder {
-	color: #333;
+	color: $color-text-dark;
 	font-weight: 300;
 }
 
@@ -250,9 +245,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-	background-color: #333;
+	background-color: $color-background-dark;
 	border: none;
-	color: #fff;
+	color: $color-text-light;
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 300;
@@ -266,8 +261,8 @@ input[type="submit"],
 .footer-widgets input[type="reset"],
 .footer-widgets input[type="submit"],
 .footer-widgets .button {
-	background-color: #e5554e;
-	color: #fff;
+	background-color: $color-text-accent;
+	color: $color-text-light;
 }
 
 button:hover,
@@ -275,12 +270,12 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-	background-color: #e5554e;
-	color: #fff;
+	background-color: $$color-background-button-dark;
+	color: $color-text-light;
 }
 
 .entry-content .button:hover {
-	color: #fff;
+	color: $color-text-light;
 }
 
 .footer-widgets button:hover,
@@ -288,8 +283,8 @@ input:hover[type="submit"],
 .footer-widgets input:hover[type="reset"],
 .footer-widgets input:hover[type="submit"],
 .footer-widgets .button:hover {
-	background-color: #fff;
-	color: #333;
+	background-color: $color-background-light;
+	color: $color-text-dark;
 }
 
 .button {
@@ -313,7 +308,7 @@ table {
 }
 
 tbody {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $color-border-light;
 }
 
 td,
@@ -322,7 +317,7 @@ th {
 }
 
 td {
-	border-top: 1px solid #ddd;
+	border-top: 1px solid $color-border-light;
 	padding: 6px 0;
 }
 

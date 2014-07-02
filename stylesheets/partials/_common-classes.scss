@@ -30,7 +30,7 @@
 
 .archive-description,
 .author-box {
-	background-color: #fff;
+	background-color: $color-background-light;
 	font-size: 16px;
 	margin-bottom: 40px;
 	padding: 40px;
@@ -87,11 +87,11 @@
 
 .entry-title a,
 .sidebar .widget-title a {
-	color: #333;
+	color: $color-link-dark;
 }
 
 .entry-title a:hover {
-	color: #e5554e;
+	color: $color-link-hover-dark;
 }
 
 .widget-title {
@@ -100,7 +100,7 @@
 }
 
 .footer-widgets .widget-title {
-	color: #fff;
+	color: $color-text-light;
 }
 
 /* ## WordPress

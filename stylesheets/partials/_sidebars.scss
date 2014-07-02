@@ -6,7 +6,7 @@
 }
 
 .sidebar li {
-	border-bottom: 1px dotted #ddd;
+	border-bottom: 1px dotted $color-border-light;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 }
@@ -17,7 +17,7 @@
 }
 
 .sidebar .widget {
-	background-color: #fff;
+	background-color: $color-background-dark;
 	margin-bottom: 40px;
 	padding: 40px;
 }
