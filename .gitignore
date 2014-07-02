@@ -3,4 +3,4 @@
 **/.sass-cache/*
 
 /README.html
-/node_modules
+node_modules
