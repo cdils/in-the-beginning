@@ -1,6 +1,5 @@
 .site-header {
 	background-color: $color-background;
-	min-height: 160px;
 }
 
 .site-header .wrap {
@@ -13,10 +12,7 @@
 .title-area {
 	float: left;
 	padding: 10px 0;
-	width: 360px;
-}
-
-.header-full-width .title-area {
+	text-align: center;
 	width: 100%;
 }
 
@@ -60,6 +56,6 @@
 
 .site-header .widget-area {
 	float: right;
-	text-align: right;
-	width: 800px;
+	text-align: center;
+	width: 100%;
 }

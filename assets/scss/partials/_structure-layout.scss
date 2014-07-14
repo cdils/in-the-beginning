@@ -4,7 +4,7 @@
 .site-inner,
 .wrap {
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 100%;
 }
 
 .site-inner {
@@ -17,10 +17,8 @@
 
 /* ### Wrapping div for .content and .sidebar-primary */
 
-.content-sidebar-sidebar .content-sidebar-wrap,
-.sidebar-content-sidebar .content-sidebar-wrap,
-.sidebar-sidebar-content .content-sidebar-wrap {
-	width: 980px;
+.content-sidebar-wrap {
+	width: 100%;
 }
 
 .content-sidebar-sidebar .content-sidebar-wrap {
@@ -36,7 +34,7 @@
 
 .content {
 	float: right;
-	width: 800px;
+	width: 100%;
 }
 
 .content-sidebar .content,
@@ -45,13 +43,7 @@
 	float: left;
 }
 
-.content-sidebar-sidebar .content,
-.sidebar-content-sidebar .content,
-.sidebar-sidebar-content .content {
-	width: 580px;
-}
-
-.full-width-content .content {
+.content {
 	width: 100%;
 }
 
@@ -59,7 +51,7 @@
 
 .sidebar-primary {
 	float: right;
-	width: 360px;
+	width: 100%;
 }
 
 .sidebar-content .sidebar-primary,
@@ -71,7 +63,7 @@
 
 .sidebar-secondary {
 	float: left;
-	width: 180px;
+	width: 100%;
 }
 
 .content-sidebar-sidebar .sidebar-secondary {
@@ -94,42 +86,6 @@
 .two-sixths,
 .two-thirds {
 	float: left;
-	margin-left: 2.564102564102564%;
-}
-
-.one-half,
-.three-sixths,
-.two-fourths {
-	width: 48.717948717948715%;
-}
-
-.one-third,
-.two-sixths {
-	width: 31.623931623931625%;
-}
-
-.four-sixths,
-.two-thirds {
-	width: 65.81196581196582%;
-}
-
-.one-fourth {
-	width: 23.076923076923077%;
-}
-
-.three-fourths {
-	width: 74.35897435897436%;
-}
-
-.one-sixth {
-	width: 14.52991452991453%;
-}
-
-.five-sixths {
-	width: 82.90598290598291%;
-}
-
-.first {
-	clear: both;
-	margin-left: 0;
+	margin: 0;
+	width: 100%;
 }
