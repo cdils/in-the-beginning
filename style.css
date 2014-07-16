@@ -154,8 +154,9 @@ figure {
 }
 
 hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   height: 0;
 }
 
@@ -276,28 +277,27 @@ input[type="search"] {
   display: table;
 }
 
-.author-box:after:after,
-.clearfix:after:after,
-.entry:after:after,
-.entry-content:after:after,
-.footer-widgets:after:after,
-.nav-primary:after:after,
-.nav-secondary:after:after,
-.pagination:after:after,
-.site-container:after:after,
-.site-footer:after:after,
-.site-header:after:after,
-.site-inner:after:after,
-.wrap:after:after {
-  content: "";
-  display: table;
+.author-box:after,
+.clearfix:after,
+.entry:after,
+.entry-content:after,
+.footer-widgets:after,
+.nav-primary:after,
+.nav-secondary:after,
+.pagination:after,
+.site-container:after,
+.site-footer:after,
+.site-header:after,
+.site-inner:after,
+.wrap:after {
   clear: both;
+  content: " ";
+  display: table;
 }
 
 /* # Defaults
 ---------------------------------------------------------------------------------------------------- */
-/* ## Typographical Elements
---------------------------------------------- */
+x
 body {
   background-color: white;
   color: #333333;
@@ -760,13 +760,8 @@ th {
 }
 
 .site-header .search-form {
-  float: right;
-  margin-top: 12px;
-}
-
-.entry-content .search-form,
-.site-header .search-form {
-  width: 50%;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .genesis-nav-menu .search input[type="submit"],
@@ -961,6 +956,7 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
   background-color: white;
+  min-height: 160px;
 }
 
 .site-header .wrap {
@@ -1316,7 +1312,12 @@ li.comment {
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
 .sidebar {
+  color: #dddddd;
   font-size: 16px;
+}
+
+.sidebar .widgettitle {
+  color: #dddddd;
 }
 
 .sidebar li {
@@ -1332,7 +1333,6 @@ li.comment {
 
 .sidebar .widget {
   background-color: #333333;
-  margin-bottom: 40px;
   padding: 40px;
 }
 
@@ -1346,7 +1346,7 @@ li.comment {
 
 .footer-widgets,
 .footer-widgets a {
-  color: #999;
+  color: #477dca;
 }
 
 .footer-widgets input {
@@ -1390,10 +1390,9 @@ li.comment {
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #dddddd;
-  font-size: 16px;
+  clear: both;
   line-height: 1;
-  padding: 40px 0;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -1403,49 +1402,9 @@ li.comment {
 
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
-@media only screen and (max-width: 1200px) {
-  .site-inner,
-  .wrap {
-    max-width: 960px;
-  }
-
-  .content-sidebar-sidebar .content-sidebar-wrap,
-  .sidebar-content-sidebar .content-sidebar-wrap,
-  .sidebar-sidebar-content .content-sidebar-wrap {
-    width: 740px;
-  }
-
-  .content,
-  .site-header .widget-area {
-    width: 620px;
-  }
-
-  .sidebar-content-sidebar .content,
-  .sidebar-sidebar-content .content,
-  .content-sidebar-sidebar .content {
-    width: 400px;
-  }
-
-  .footer-widgets-1,
-  .footer-widgets-2,
-  .footer-widgets-3,
-  .sidebar-primary,
-  .title-area {
-    width: 300px;
-  }
-
-  .footer-widgets-1 {
-    margin-right: 30px;
-  }
-}
 @media only screen and (min-width: 1024px) {
   body {
     background-color: #f5f5f5;
-  }
-
-  .site-header .wrap {
-    padding: 40px 0;
-    padding: 4rem 0;
   }
 
   .title-area {
@@ -1458,13 +1417,11 @@ li.comment {
 
   .header-image .site-header .widget-area {
     padding: 40px 0;
-    padding: 4rem 0;
   }
 
   .site-header .search-form {
     float: right;
-    margin: 24px 0 0;
-    margin: 2.4rem 0 0;
+    padding: 10px;
   }
 
   .content,
@@ -1486,7 +1443,6 @@ li.comment {
 
   .genesis-nav-menu a {
     padding: 28px 24px;
-    padding: 2.8rem 2.4rem;
   }
 
   .genesis-nav-menu > .first > a {
@@ -1502,7 +1458,6 @@ li.comment {
     float: right;
     list-style-type: none;
     padding: 28px 0;
-    padding: 2.8rem 0;
     text-transform: uppercase;
   }
 
@@ -1513,13 +1468,12 @@ li.comment {
 
   .genesis-nav-menu > .search {
     padding: 14px 0 0;
-    padding: 1.4rem 0 0;
   }
 
   .site-inner,
   .wrap {
-    padding-left: 0;
-    padding-right: 0;
+    margin: 0 auto;
+    max-width: 960px;
   }
 
   .content-sidebar-sidebar .content-sidebar-wrap,
@@ -1536,17 +1490,12 @@ li.comment {
 
   .site-footer {
     padding: 40px 0;
-    padding: 4rem 0;
   }
 
   .footer-widgets {
     padding: 40px 0 16px;
-    padding: 4rem 0 1.6rem;
   }
 
-  .footer-widgets-1,
-  .footer-widgets-2,
-  .footer-widgets-3,
   .sidebar-primary,
   .title-area {
     width: 300px;
@@ -1556,48 +1505,35 @@ li.comment {
     width: 180px;
   }
 
-  .footer-widgets-1 {
-    margin-right: 40px;
-    margin-right: 4rem;
-  }
-
   .archive-description {
     padding: 40px 40px 24px;
-    padding: 4rem 4rem 2.4rem;
   }
 
   .author-box {
     padding: 40px;
-    padding: 4rem;
   }
 
   .comment-respond,
   .entry-pings {
     padding: 40px 40px 16px;
-    padding: 4rem 4rem 1.6rem;
   }
 
   .entry {
     padding: 40px 40px 24px;
-    padding: 4rem 4rem 2.4rem;
   }
 
   .entry-comments {
     padding: 40px;
-    padding: 4rem;
   }
 
   .entry-footer .entry-meta {
     border-top: 2px solid #f5f5f5;
     margin: 0 -40px;
-    margin: 0 -4rem;
     padding: 32px 40px 8px;
-    padding: 3.2rem 4rem 0.8rem;
   }
 
   .sidebar .widget {
     padding: 40px;
-    padding: 4rem;
   }
 
   .five-sixths,

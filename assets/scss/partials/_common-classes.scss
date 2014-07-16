@@ -51,13 +51,8 @@
 }
 
 .site-header .search-form {
-	float: right;
-	margin-top: 12px;
-}
-
-.entry-content .search-form,
-.site-header .search-form {
-	width: 50%;
+	margin: 0 auto;
+	width: 80%;
 }
 
 .genesis-nav-menu .search input[type="submit"],
@@ -159,7 +154,4 @@ img.alignright,
 
 .entry-content p.wp-caption-text {
 	margin-bottom: 0;
-}
-
-.sticky {
 }

@@ -1,50 +1,7 @@
-@media only screen and (max-width: 1200px) {
-
-	.site-inner,
-	.wrap {
-		max-width: 960px;
-	}
-
-	.content-sidebar-sidebar .content-sidebar-wrap,
-	.sidebar-content-sidebar .content-sidebar-wrap,
-	.sidebar-sidebar-content .content-sidebar-wrap {
-		width: 740px;
-	}
-
-	.content,
-	.site-header .widget-area {
-		width: 620px;
-	}
-
-	.sidebar-content-sidebar .content,
-	.sidebar-sidebar-content .content,
-	.content-sidebar-sidebar .content {
-		width: 400px;
-	}
-
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3,
-	.sidebar-primary,
-	.title-area {
-		width: 300px;
-	}
-
-	.footer-widgets-1 {
-		margin-right: 30px;
-	}
-
-}
-
 @media only screen and (min-width: 1024px) {
 
 	body {
 		background-color: #f5f5f5;
-	}
-
-	.site-header .wrap {
-		padding: 40px 0;
-		padding: 4rem 0;
 	}
 
 	.title-area {
@@ -57,13 +14,11 @@
 
 	.header-image .site-header .widget-area {
 		padding: 40px 0;
-		padding: 4rem 0;
 	}
 
 	.site-header .search-form {
 		float: right;
-		margin: 24px 0 0;
-		margin: 2.4rem 0 0;
+		padding: 10px;
 	}
 
 	.content,
@@ -85,7 +40,6 @@
 
 	.genesis-nav-menu a {
 		padding: 28px 24px;
-		padding: 2.8rem 2.4rem;
 	}
 
 	.genesis-nav-menu > .first > a {
@@ -101,7 +55,6 @@
 		float: right;
 		list-style-type: none;
 		padding: 28px 0;
-		padding: 2.8rem 0;
 		text-transform: uppercase;
 	}
 
@@ -112,13 +65,12 @@
 
 	.genesis-nav-menu > .search {
 		padding: 14px 0 0;
-		padding: 1.4rem 0 0;
 	}
 
 	.site-inner,
 	.wrap {
-		padding-left: 0;
-		padding-right: 0;
+		margin: 0 auto;
+		max-width: 960px;
 	}
 
 	.content-sidebar-sidebar .content-sidebar-wrap,
@@ -135,17 +87,12 @@
 
 	.site-footer {
 		padding: 40px 0;
-		padding: 4rem 0;
 	}
 
 	.footer-widgets {
 		padding: 40px 0 16px;
-		padding: 4rem 0 1.6rem;
 	}
 
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3,
 	.sidebar-primary,
 	.title-area {
 		width: 300px;
@@ -155,48 +102,35 @@
 		width: 180px;
 	}
 
-	.footer-widgets-1 {
-		margin-right: 40px;
-		margin-right: 4rem;
-	}
-
 	.archive-description {
 		padding: 40px 40px 24px;
-		padding: 4rem 4rem 2.4rem;
 	}
 
 	.author-box {
 		padding: 40px;
-		padding: 4rem;
 	}
 
 	.comment-respond,
 	.entry-pings {
 		padding: 40px 40px 16px;
-		padding: 4rem 4rem 1.6rem;
 	}
 
 	.entry {
 		padding: 40px 40px 24px;
-		padding: 4rem 4rem 2.4rem;
 	}
 
 	.entry-comments {
 		padding: 40px;
-		padding: 4rem;
 	}
 
 	.entry-footer .entry-meta {
 		border-top: 2px solid #f5f5f5;
 		margin: 0 -40px;
-		margin: 0 -4rem;
 		padding: 32px 40px 8px;
-		padding: 3.2rem 4rem 0.8rem;
 	}
 
 	.sidebar .widget {
 		padding: 40px;
-		padding: 4rem;
 	}
 
 	.five-sixths,

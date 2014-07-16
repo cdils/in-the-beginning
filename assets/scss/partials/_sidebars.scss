@@ -1,5 +1,10 @@
 .sidebar {
+	color: $color-text-light;
 	font-size: 16px;
+}
+
+.sidebar .widgettitle {
+	color: $color-text-light;
 }
 
 .sidebar li {
@@ -15,6 +20,5 @@
 
 .sidebar .widget {
 	background-color: $color-background-dark;
-	margin-bottom: 40px;
 	padding: 40px;
 }
