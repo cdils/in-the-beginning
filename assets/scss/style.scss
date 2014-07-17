@@ -61,7 +61,12 @@ Version: 0.2.0
 	- Max-width: 800px
 */
 
-@import "bourbon/bourbon";
+/* Import Bourbon, Neat, and Bitters */
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
+@import "base/base";
+
+/* Import Partials */
 @import "partials/variables";
 @import "partials/mixins";
 

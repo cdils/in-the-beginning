@@ -1,0 +1,12 @@
+{
+  "name": "in-the-beginning",
+  "version": "1.0.0",
+  "authors": [
+    "Carrie Dils"
+  ],
+  "license": "GPL-2.0+",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+  }
+}

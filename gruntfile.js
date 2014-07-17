@@ -18,6 +18,23 @@ module.exports = function(grunt) {
 		 */
 		pkg: grunt.file.readJSON('package.json'),
 		/**
+		* Bower Copy
+		*/
+		bowercopy: {
+			options: {
+				srcPrefix: 'bower_components'
+			},
+			scss: {
+				options: {
+					destPrefix: 'assets/scss/vendor'
+				},
+				files: {
+					'bourbon': 'bourbon/dist',
+					'neat': 'neat/app/assets/stylesheets',
+				}
+			}
+		},
+		/**
 		 * Sass
 		 */
 		sass: {
@@ -53,6 +70,7 @@ module.exports = function(grunt) {
 	 * Run `grunt` on the command line
 	 */
 	grunt.registerTask('default', [
+		'bowercopy',
 		'sass',
 		'watch'
 	]);
