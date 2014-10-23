@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * Grunt Module
  */
@@ -51,6 +49,11 @@ module.exports = function(grunt) {
 			}
 		},
 		/**
+		 * Grunt-CSSJanus
+		 */
+		grunt-cssjanus: {
+		},
+		/**
 		 * Watch
 		 */
 		watch: {
@@ -62,6 +65,9 @@ module.exports = function(grunt) {
 				],
 				tasks: ['sass']
 			}
+			grunt-cssjanus: {
+				tasks: ['grunt-cssjanus']
+			}
 		}
 	});
 
@@ -72,6 +78,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		'bowercopy',
 		'sass',
+		'cssjanus',
 		'watch'
 	]);
 };

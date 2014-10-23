@@ -14,6 +14,8 @@
     "grunt-bowercopy": "^1.1.0",
     "grunt-contrib-sass": "^0.7.3",
     "grunt-contrib-watch": "^0.6.1",
-    "matchdep": "^0.3.0"
+    "matchdep": "^0.3.0",
+    "cssjanus": "^1.1.0",
+    "grunt-cssjanus": "~0.2.2"
   }
 }
