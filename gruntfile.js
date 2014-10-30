@@ -49,6 +49,16 @@ module.exports = function(grunt) {
 			}
 		},
 		/**
+		 * makepot
+		 */
+		makepot: {
+			theme: {
+				options: {
+				type: 'wp-theme'
+				}
+			}
+		},
+		/**
 		 * CSSJanus
 		 */
 		cssjanus: {
