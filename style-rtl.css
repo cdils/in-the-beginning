@@ -145,8 +145,8 @@ a:active, a:focus {
 
 hr {
   border-bottom: 1px solid #dddddd;
-  border-left: none;
   border-right: none;
+  border-left: none;
   border-top: none;
   margin: 1.5em 0;
 }
@@ -157,14 +157,14 @@ img {
 }
 
 blockquote {
-  border-left: 2px solid #dddddd;
+  border-right: 2px solid #dddddd;
   color: #595959;
   margin: 1.5em 0;
-  padding-left: 0.75em;
+  padding-right: 0.75em;
 }
 
 cite {
-  color: #737373;
+  color: gray;
   font-style: italic;
 }
 cite:before {
@@ -243,7 +243,7 @@ input[type="search"] {
 
 input[type="checkbox"], input[type="radio"] {
   display: inline;
-  margin-right: 0.375em;
+  margin-left: 0.375em;
 }
 
 input[type="file"] {
@@ -269,7 +269,7 @@ th {
   border-bottom: 1px solid #b7b7b7;
   font-weight: bold;
   padding: 0.75em 0;
-  text-align: left;
+  text-align: right;
 }
 
 td {
@@ -635,7 +635,7 @@ blockquote::before {
   display: block;
   font-size: 30px;
   height: 0;
-  left: -20px;
+  right: -20px;
   position: relative;
   top: -10px;
 }
@@ -706,7 +706,7 @@ img {
 }
 
 .gallery-item {
-  float: left;
+  float: right;
   margin: 0 0 28px;
   text-align: center;
 }
@@ -862,7 +862,7 @@ tbody {
 
 td,
 th {
-  text-align: left;
+  text-align: right;
 }
 
 td {
@@ -897,24 +897,24 @@ th {
 }
 
 .content-sidebar-sidebar .content-sidebar-wrap {
-  float: left;
+  float: right;
 }
 
 .sidebar-content-sidebar .content-sidebar-wrap,
 .sidebar-sidebar-content .content-sidebar-wrap {
-  float: right;
+  float: left;
 }
 
 /* ### Content */
 .content {
-  float: right;
+  float: left;
   width: 100%;
 }
 
 .content-sidebar .content,
 .content-sidebar-sidebar .content,
 .sidebar-content-sidebar .content {
-  float: left;
+  float: right;
 }
 
 .content {
@@ -923,23 +923,23 @@ th {
 
 /* ### Primary Sidebar */
 .sidebar-primary {
-  float: right;
+  float: left;
   width: 100%;
 }
 
 .sidebar-content .sidebar-primary,
 .sidebar-sidebar-content .sidebar-primary {
-  float: left;
+  float: right;
 }
 
 /* ### Secondary Sidebar */
 .sidebar-secondary {
-  float: left;
+  float: right;
   width: 100%;
 }
 
 .content-sidebar-sidebar .sidebar-secondary {
-  float: right;
+  float: left;
 }
 
 /* ## Column Classes
@@ -956,7 +956,7 @@ th {
 .two-fourths,
 .two-sixths,
 .two-thirds {
-  float: left;
+  float: right;
   margin: 0;
   width: 100%;
 }
@@ -966,20 +966,20 @@ th {
 /* ## Avatar
 --------------------------------------------- */
 .avatar {
-  float: left;
+  float: right;
 }
 
 .alignleft .avatar,
 .author-box .avatar {
-  margin-right: 24px;
-}
-
-.alignright .avatar {
   margin-left: 24px;
 }
 
+.alignright .avatar {
+  margin-right: 24px;
+}
+
 .comment .avatar {
-  margin: 0 16px 24px 0;
+  margin: 0 0 24px 16px;
 }
 
 /* ## Genesis
@@ -1068,13 +1068,13 @@ a.alignnone {
 }
 
 .alignleft {
-  float: left;
-  text-align: left;
+  float: right;
+  text-align: right;
 }
 
 .alignright {
-  float: right;
-  text-align: right;
+  float: left;
+  text-align: left;
 }
 
 a.alignleft,
@@ -1097,13 +1097,13 @@ img.alignnone,
 a.alignleft,
 img.alignleft,
 .wp-caption.alignleft {
-  margin: 0 24px 24px 0;
+  margin: 0 0 24px 24px;
 }
 
 a.alignright,
 img.alignright,
 .wp-caption.alignright {
-  margin: 0 0 24px 24px;
+  margin: 0 24px 24px 0;
 }
 
 .wp-caption-text {
@@ -1125,13 +1125,13 @@ img.alignright,
 .widget ol > li {
   list-style-position: inside;
   list-style-type: decimal;
-  padding-left: 20px;
+  padding-right: 20px;
   text-indent: -20px;
 }
 
 .widget li li {
   border: none;
-  margin: 0 0 0 30px;
+  margin: 0 30px 0 0;
   padding: 0;
 }
 
@@ -1219,7 +1219,7 @@ img.alignright,
 /* ## Title Area
 --------------------------------------------- */
 .title-area {
-  float: left;
+  float: right;
   padding: 10px 0;
   text-align: center;
   width: 100%;
@@ -1237,8 +1237,8 @@ img.alignright,
 }
 
 .header-image .site-title > a {
-  background: url(images/logo.png) no-repeat left;
-  float: left;
+  background: url(images/logo.png) no-repeat right;
+  float: right;
   min-height: 60px;
   width: 100%;
 }
@@ -1263,7 +1263,7 @@ img.alignright,
 /* ## Widget Area
 --------------------------------------------- */
 .site-header .widget-area {
-  float: right;
+  float: left;
   text-align: center;
   width: 100%;
 }
@@ -1279,7 +1279,7 @@ img.alignright,
 
 .genesis-nav-menu .menu-item {
   display: inline-block;
-  text-align: left;
+  text-align: right;
 }
 
 .genesis-nav-menu a {
@@ -1295,7 +1295,7 @@ img.alignright,
 }
 
 .genesis-nav-menu .sub-menu {
-  left: -9999px;
+  right: -9999px;
   opacity: 0;
   position: absolute;
   -webkit-transition-property: -webkit-transform;
@@ -1325,7 +1325,7 @@ img.alignright,
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
-  margin: -55px 0 0 199px;
+  margin: -55px 199px 0 0;
 }
 
 .genesis-nav-menu .menu-item:hover {
@@ -1333,20 +1333,20 @@ img.alignright,
 }
 
 .genesis-nav-menu .menu-item:hover > .sub-menu {
-  left: auto;
+  right: auto;
   opacity: 1;
 }
 
 .genesis-nav-menu > .first > a {
-  padding-left: 0;
-}
-
-.genesis-nav-menu > .last > a {
   padding-right: 0;
 }
 
+.genesis-nav-menu > .last > a {
+  padding-left: 0;
+}
+
 .genesis-nav-menu > .right {
-  float: right;
+  float: left;
   list-style-type: none;
   padding: 30px 0;
 }
@@ -1357,7 +1357,7 @@ img.alignright,
 }
 
 .genesis-nav-menu > .rss > a {
-  margin-left: 48px;
+  margin-right: 48px;
 }
 
 .genesis-nav-menu > .search {
@@ -1375,7 +1375,7 @@ img.alignright,
 }
 
 .site-header .genesis-nav-menu li li {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 /* ## Primary Navigation
@@ -1420,7 +1420,7 @@ img.alignright,
 .entry-content ol,
 .entry-content ul {
   margin-bottom: 28px;
-  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .entry-content ol > li {
@@ -1464,7 +1464,7 @@ p.entry-meta {
 
 .entry-comments-link::before {
   content: "\2014";
-  margin: 0 6px 0 2px;
+  margin: 0 2px 0 6px;
 }
 
 /* ## Pagination
@@ -1521,7 +1521,7 @@ p.entry-meta {
 li.comment {
   background-color: white;
   border: 2px solid #dddddd;
-  border-right: none;
+  border-left: none;
 }
 
 .comment-content {
@@ -1534,7 +1534,7 @@ li.comment {
 }
 
 .comment-list li li {
-  margin-right: -32px;
+  margin-left: -32px;
 }
 
 .comment-respond input[type="email"],
@@ -1545,7 +1545,7 @@ li.comment {
 
 .comment-respond label {
   display: block;
-  margin-right: 12px;
+  margin-left: 12px;
 }
 
 .entry-comments .comment-author {
@@ -1633,11 +1633,11 @@ li.comment {
 
 .footer-widgets-1,
 .footer-widgets-2 {
-  float: left;
+  float: right;
 }
 
 .footer-widgets-3 {
-  float: right;
+  float: left;
 }
 
 /* # Site Footer
@@ -1661,11 +1661,11 @@ li.comment {
   }
 
   .title-area {
-    text-align: left;
+    text-align: right;
   }
 
   .header-image .site-header .wrap {
-    background-position: left top;
+    background-position: right top;
   }
 
   .header-image .site-header .widget-area {
@@ -1673,7 +1673,7 @@ li.comment {
   }
 
   .site-header .search-form {
-    float: right;
+    float: left;
     padding: 10px;
   }
 
@@ -1687,11 +1687,11 @@ li.comment {
   }
 
   .site-header .widget-area {
-    text-align: right;
+    text-align: left;
   }
 
   .genesis-nav-menu {
-    text-align: left;
+    text-align: right;
   }
 
   .genesis-nav-menu a {
@@ -1699,16 +1699,16 @@ li.comment {
   }
 
   .genesis-nav-menu > .first > a {
-    padding-left: 0;
+    padding-right: 0;
   }
 
   .genesis-nav-menu > .last > a {
-    padding-right: 0;
+    padding-left: 0;
   }
 
   .genesis-nav-menu > .right {
     display: inline-block;
-    float: right;
+    float: left;
     list-style-type: none;
     padding: 28px 0;
     text-transform: uppercase;
@@ -1800,7 +1800,7 @@ li.comment {
   .two-fourths,
   .two-sixths,
   .two-thirds {
-    margin-left: 2.564102564102564%;
+    margin-right: 2.564102564102564%;
   }
 
   .one-half,
@@ -1837,7 +1837,7 @@ li.comment {
 
   .first {
     clear: both;
-    margin-left: 0;
+    margin-right: 0;
   }
 
   .footer-widgets-1,
@@ -1848,7 +1848,7 @@ li.comment {
 
   .footer-widgets-2,
   .footer-widgets-3 {
-    margin-left: 2.564102564102564%;
+    margin-right: 2.564102564102564%;
   }
 }
 @media only screen and (min-width: 1140px) {
@@ -1864,7 +1864,7 @@ li.comment {
   }
 
   .content {
-    float: right;
+    float: left;
     width: 740px;
   }
 

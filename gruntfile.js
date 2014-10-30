@@ -49,9 +49,20 @@ module.exports = function(grunt) {
 			}
 		},
 		/**
-		 * Grunt-CSSJanus
+		 * CSSJanus
 		 */
-		grunt-cssjanus: {
+		cssjanus: {
+			theme: {
+				options: {
+					swapLtrRtlInUrl: false
+				},
+				files: [
+					{
+						src: 'style.css',
+						dest: 'style-rtl.css'
+					}
+				]
+			}
 		},
 		/**
 		 * Watch
@@ -63,10 +74,10 @@ module.exports = function(grunt) {
 					'assets/scss/**/*.scss',
 					'assets/scss/**/**/*.scss'
 				],
-				tasks: ['sass']
-			}
-			grunt-cssjanus: {
-				tasks: ['grunt-cssjanus']
+				tasks: [
+					'sass',
+					'cssjanus'
+				]
 			}
 		}
 	});
