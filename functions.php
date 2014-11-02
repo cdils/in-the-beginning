@@ -1,5 +1,23 @@
 <?php
 
+add_action( 'after_setup_theme', 'in_the_beginning_i18n' );
+/**
+ * Load the child theme textdomain for internationalization.
+ *
+ * Must be loaded before Genesis Framework /lib/init.php is included.
+ * Translations can be filed in the /languages/ directory.
+ *
+ * @since 1.0.0
+ *
+ * @uses load_child_theme_textdomain()
+ *
+ */
+function in_the_beginning_i18n() {
+    load_child_theme_textdomain( 'in_the_beginning', get_stylesheet_directory() . '/languages' );
+}
+
+
+add_action( 'genesis_setup', 'in_the_beginning_setup', 15 );
 /**
  * Theme setup.
  *
@@ -8,25 +26,15 @@
  *
  * @since 1.0.0
  */
-
-//* Use copy of Genesis Framework language files for upgrade stability
-define( 'GENESIS_LANGUAGES_DIR', trailingslashit( get_stylesheet_directory() ) . 'languages/genesis' );
-
-// Must be added before Genesis Framework /lib/init.php is included
-add_action( 'after_setup_theme', 'in_the_beginning_genesis_child_setup' );
-function in_the_beginning_genesis_child_setup() {
-    load_child_theme_textdomain( 'in_the_beginning', trailingslashit( get_stylesheet_directory() ) . 'languages' );
-}
-
-function in_the_beginning_child_theme_setup() {
+function in_the_beginning_setup() {
 
 	//* Child theme (do not remove)
 	define( 'CHILD_THEME_NAME', 'In the Beginning' );
 	define( 'CHILD_THEME_URL', 'http://www.carriedils.com/' );
-	define( 'CHILD_THEME_VERSION', '0.2.0' );
+	define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 	//* Add HTML5 markup structure
-	add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
+	add_theme_support( 'html5', array( 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ) );
 
 	//* Add viewport meta tag for mobile browsers
 	add_theme_support( 'genesis-responsive-viewport' );
@@ -37,17 +45,17 @@ function in_the_beginning_child_theme_setup() {
 	//* Add support for 3-column footer widgets
 	add_theme_support( 'genesis-footer-widgets', 3 );
 
-	//* Enqueue Google Fonts
-	add_action( 'wp_enqueue_scripts', 'in_the_beginning_google_fonts' );
+	//* Queue scripts used for the front end
+	add_action( 'wp_enqueue_scripts', 'in_the_beginning_scripts' );
 }
-add_action( 'genesis_setup', 'in_the_beginning_child_theme_setup', 15 );
 
-
-//* Enqueue Google Fonts
-function in_the_beginning_google_fonts() {
-
+/**
+ * Enqueue Google font stylesheet.
+ *
+ * @since 1.0.0
+ */
+function in_the_beginning_scripts() {
     wp_enqueue_style( 'in-the-beginning-fonts', in_the_beginning_fonts_url(), array(), null );
-
 }
 
 /**
@@ -55,9 +63,10 @@ function in_the_beginning_google_fonts() {
  *
  * This function enqueues Google fonts in such a way that translators can easily turn on/off
  * the fonts if they do not contain the necessary character sets. Hat tip to Frank Klein for
- * showing this to me.
+ * the tutorial.
  *
  * @link http://themeshaper.com/2014/08/13/how-to-add-google-fonts-to-wordpress-themes/
+ *
  * @since  1.0.0
  */
 function in_the_beginning_fonts_url() {
