@@ -8,14 +8,10 @@ add_action( 'after_setup_theme', 'in_the_beginning_i18n' );
  * Translations can be filed in the /languages/ directory.
  *
  * @since 1.0.0
- *
- * @uses load_child_theme_textdomain()
- *
  */
 function in_the_beginning_i18n() {
-    load_child_theme_textdomain( 'in_the_beginning', get_stylesheet_directory() . '/languages' );
+    load_child_theme_textdomain( 'in-the-beginning', get_stylesheet_directory() . '/languages' );
 }
-
 
 add_action( 'genesis_setup', 'in_the_beginning_setup', 15 );
 /**
@@ -46,16 +42,25 @@ function in_the_beginning_setup() {
 	add_theme_support( 'genesis-footer-widgets', 3 );
 
 	//* Queue scripts used for the front end
-	add_action( 'wp_enqueue_scripts', 'in_the_beginning_scripts' );
+	add_action( 'wp_enqueue_scripts', 'in_the_beginning_enqueue_assets' );
 }
 
 /**
- * Enqueue Google font stylesheet.
+ * Enqueue theme assets.
  *
  * @since 1.0.0
  */
-function in_the_beginning_scripts() {
+function in_the_beginning_enqueue_assets() {
+
+    // Load Google fonts
     wp_enqueue_style( 'in-the-beginning-fonts', in_the_beginning_fonts_url(), array(), null );
+
+    // Check if the current locale is RTL script
+    if ( is_rtl() ) {
+
+        // Replace style.css with style-rtl.css for RTL languages
+        wp_style_add_data( 'in-the-beginning', 'rtl', 'replace' );
+    }
 }
 
 /**

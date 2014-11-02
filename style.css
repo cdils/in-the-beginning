@@ -57,6 +57,12 @@ Text Domain: in-the-beginning
 	- Min-width: 1024px
 	- Min-width: 1140px
 */
+/* @noflip */
+body.rtl {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
 /* Import Bourbon, Neat, and Bitters */
 * {
   -webkit-box-sizing: border-box;
