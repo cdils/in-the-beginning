@@ -1,5 +1,8 @@
 <?php
 
+// Change this to your theme text domain, used for internationalising strings
+$theme_text_domain = 'in-the-beginning';
+
 add_action( 'after_setup_theme', 'in_the_beginning_i18n' );
 /**
  * Load the child theme textdomain for internationalization.
@@ -10,7 +13,7 @@ add_action( 'after_setup_theme', 'in_the_beginning_i18n' );
  * @since 1.0.0
  */
 function in_the_beginning_i18n() {
-    load_child_theme_textdomain( 'in-the-beginning', get_stylesheet_directory() . '/languages' );
+    load_child_theme_textdomain( $theme_text_domain, get_stylesheet_directory() . '/languages' );
 }
 
 add_action( 'genesis_setup', 'in_the_beginning_setup', 15 );
@@ -81,7 +84,7 @@ function in_the_beginning_fonts_url() {
     * supported by Lato, translate this to 'off'. Do not translate
     * into your own language.
     */
-    $lato = _x( 'on', 'Lato font: on or off', 'in-the-beginning' );
+    $lato = _x( 'on', 'Lato font: on or off', $theme_text_domain );
 
     if ( 'off' !== $lato ) {
         $font_families = array();
