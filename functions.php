@@ -58,12 +58,8 @@ function in_the_beginning_enqueue_assets() {
     // Load Google fonts
     wp_enqueue_style( 'in-the-beginning-fonts', in_the_beginning_fonts_url(), array(), null );
 
-    // Check if the current locale is RTL script
-    if ( is_rtl() ) {
-
-        // Replace style.css with style-rtl.css for RTL languages
-        wp_style_add_data( 'in-the-beginning', 'rtl', 'replace' );
-    }
+    // Replace style.css with style-rtl.css for RTL languages
+    wp_style_add_data( 'in-the-beginning', 'rtl', 'replace' );
 }
 
 /**
