@@ -1,7 +1,46 @@
-# sass cache
+# OSX
+.DS_Store
+
+# theme specific
 **/.sass-cache
 **/.sass-cache/*
-
-/README.html
-/node_modules
+.sass-cache/*
 /bower_components
+**/scss/vendor
+assets/composer/*
+dist/
+
+# large/disallowed file types
+# a CDN should be used for these
+*.hqx
+*.bin
+*.exe
+*.dll
+*.deb
+*.dmg
+*.iso
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.webm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi
