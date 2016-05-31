@@ -4,9 +4,16 @@
   "authors": [
     "Carrie Dils"
   ],
+  "description": "Genesis child theme",
   "license": "GPL-2.0+",
   "private": true,
-  "dependencies": {},
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
   "devDependencies": {
+    "bourbon": "~4.2.6",
+    "neat": "~1.7.2"
   }
 }
