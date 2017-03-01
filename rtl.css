@@ -1,0 +1,406 @@
+/* # Genesis Framework
+Theme Name: In the Beginning
+Theme URI: https://github.com/cdils/in-the-beginning
+Description: This is a Sass starter theme created for the Genesis Framework.
+Author: Carrie Dls
+Author URI: http://www.carriedils.com/
+Template: genesis
+Template Version: 2.1.0
+Tags: black, orange, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready  
+License: GPL-2.0+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 0.2.0
+*/
+/* # Table of Contents
+- HTML5 Reset
+	- Baseline Normalize
+	- Box Sizing
+	- Float Clearing
+- Defaults
+	- Typographical Elements
+	- Headings
+	- Objects
+	- Gallery
+	- Forms
+	- Tables
+- Structure and Layout
+	- Site Containers
+	- Column Widths and Positions
+	- Column Classes
+- Common Classes
+	- Avatar
+	- Genesis
+	- Search Form
+	- Titles
+	- WordPress
+- Widgets
+	- Featured Content
+- Plugins
+	- Genesis eNews Extended
+	- Jetpack
+- Site Header
+	- Title Area
+	- Widget Area
+- Site Navigation
+	- Header Navigation
+	- Primary Navigation
+	- Secondary Navigation
+- Content Area
+	- Entries
+	- Entry Meta
+	- Pagination
+	- Comments
+- Sidebars
+- Footer Widgets
+- Site Footer
+- Media Queries
+	- Retina Display
+	- Max-width: 1200px
+	- Max-width: 960px
+	- Max-width: 800px
+*/
+/* Import Bourbon, Neat, and Bitters */
+
+blockquote {
+    border-right: 2px solid #dddddd;
+    padding-right: 0.75em;
+	padding-left: 0;
+	border-left: none;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-left: 0.375em;
+	margin-right: auto;
+}
+
+th {
+    text-align: right;
+}
+
+/* Import Partials */
+/* # HTML5 Reset
+---------------------------------------------------------------------------------------------------- */
+/* ## Baseline Normalize
+--------------------------------------------- */
+/* normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+/* ## Box Sizing
+--------------------------------------------- */
+
+/* ## Float Clearing
+--------------------------------------------- */
+
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+
+blockquote::before {
+    content: "\201D";
+	right: -20px;
+	left: auto;
+}
+
+/* ## Headings
+--------------------------------------------- */
+
+/* ## Objects
+--------------------------------------------- */
+
+/* ## Gallery
+--------------------------------------------- */
+
+.gallery-item {
+    float: right;
+}
+
+/* ## Forms
+--------------------------------------------- */
+
+/* ## Tables
+--------------------------------------------- */
+
+td,
+th {
+    text-align: right;
+}
+
+/* # Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+--------------------------------------------- */
+
+/* ## Column Widths and Positions
+--------------------------------------------- */
+/* ### Wrapping div for .content and .sidebar-primary */
+
+/* ### Content */
+
+/* ### Primary Sidebar */
+
+/* ### Secondary Sidebar */
+
+/* ## Column Classes
+--------------------------------------------- */
+/* Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css */
+.five-sixths,
+.four-sixths,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fourths,
+.three-sixths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+    float: right;
+}
+
+/* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+/* ## Avatar
+--------------------------------------------- */
+.avatar {
+    float: right;
+}
+
+.author-box .avatar {
+    margin-left: 24px;
+	margin-right: auto;
+}
+
+.comment .avatar {
+    margin: 0 0 24px 16px;
+}
+
+/* ## Genesis
+--------------------------------------------- */
+
+/* ## Search Form
+--------------------------------------------- */
+
+/* ## Titles
+--------------------------------------------- */
+
+/* ## WordPress
+--------------------------------------------- */
+
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.widget ol > li {
+    padding-right: 20px;
+	padding-left: 0;
+}
+
+.widget li li {
+    margin: 0 30px 0 0;
+}
+
+/* ## Featured Content
+--------------------------------------------- */
+
+/* # Plugins
+---------------------------------------------------------------------------------------------------- */
+/* ## Genesis eNews Extended
+--------------------------------------------- */
+
+/* ## Jetpack
+--------------------------------------------- */
+
+/* # Site Header
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Title Area
+--------------------------------------------- */
+.title-area {
+    float: right;
+}
+
+.header-image .site-title > a {
+    background: url(images/logo.png) no-repeat right;
+    float: right;
+}
+
+/* ## Widget Area
+--------------------------------------------- */
+.site-header .widget-area {
+    float: left;
+}
+
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+
+.genesis-nav-menu .menu-item {
+    text-align: right;
+}
+
+.genesis-nav-menu .sub-menu {
+    right: -9999px;
+	left: auto;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+    margin: -55px 199px 0 0;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+    right: auto;
+}
+
+.genesis-nav-menu > .first > a {
+    padding-right: 0;
+	padding-left: 24px;
+}
+
+.genesis-nav-menu > .last > a {
+    padding-left: 0;
+	padding-right: 24px;
+}
+
+.genesis-nav-menu > .right{
+    float: left;
+}
+
+.genesis-nav-menu > .rss > a {
+    margin-right: 48px;
+	margin-left: auto;
+}
+
+/* ## Site Header Navigation
+--------------------------------------------- */
+
+.site-header .genesis-nav-menu li li {
+    margin-right: 0;
+	margin-left: auto;
+}
+
+/* ## Primary Navigation
+--------------------------------------------- */
+
+/* ## Secondary Navigation
+--------------------------------------------- */
+
+/* # Content Area
+---------------------------------------------------------------------------------------------------- */
+/* ## Entries
+--------------------------------------------- */
+
+.entry-content ol,
+.entry-content ul {
+    margin-right: 40px;
+	margin-left: auto;
+}
+
+/* ## Entry Meta
+--------------------------------------------- */
+
+.entry-comments-link::before {
+    margin: 0 2px 0 6px;
+}
+
+/* ## Pagination
+--------------------------------------------- */
+
+/* ## Comments
+--------------------------------------------- */
+
+li.comment {
+    border-left: none;
+}
+
+.comment-list li li {
+    margin-left: -32px;
+	margin-right: auto;
+}
+
+.comment-respond label {
+    margin-left: 12px;
+	margin-right: auto;
+}
+
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets-1,
+.footer-widgets-2 {
+    float: right;
+}
+
+.footer-widgets-3 {
+    float: left;
+}
+
+/* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+/* # Media Queries
+---------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 1024px) {
+
+	.title-area {
+		text-align: right;
+	}
+	
+	.header-image .site-header .wrap {
+		background-position: right top;
+	}
+	
+	.site-header .search-form {
+		float: left;
+	}
+	
+	.site-header .widget-area {
+		text-align: left;
+	}
+	
+	.genesis-nav-menu {
+		text-align: right;
+	}
+	
+	.genesis-nav-menu > .first > a {
+		padding-right: 0;
+		padding-left: 24px;
+	}
+	
+	.genesis-nav-menu > .last > a {
+		padding-left: 0;
+		padding-right: 24px;
+	}
+	
+	.genesis-nav-menu > .right {
+		float: left;
+	}
+	
+	.five-sixths,
+	.four-sixths,
+	.one-fourth,
+	.one-half,
+	.one-sixth,
+	.one-third,
+	.three-fourths,
+	.three-sixths,
+	.two-fourths,
+	.two-sixths,
+	.two-thirds {
+		margin-right: 2.564102564102564%;
+		margin-left: auto;
+	}
+	
+	.first {
+		margin-left: auto;
+		margin-right: 0;
+	}
+	
+	.footer-widgets-2,
+	.footer-widgets-3 {
+		margin-right: 2.564102564102564%;
+		margin-left: auto;
+	}
+}
+
+@media only screen and (min-width: 1140px) {
+
+}
